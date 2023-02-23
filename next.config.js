@@ -6,31 +6,31 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: `http://localhost:3000/${process.env.BACK}/api/:path*`,
+        destination: `https://front-end-ashy-alpha.vercel.app/${process.env.BACK}/api/:path*`,
       },
       {
         source: '/',
-        destination: 'http://localhost:3000/index.html',
+        destination: 'https://front-end-ashy-alpha.vercel.app/index.html',
       },
       {
         source: '/policy/refund',
-        destination: 'http://localhost:3000/refunds.html',
+        destination: 'https://front-end-ashy-alpha.vercel.app/refunds.html',
       },
       {
         source: '/policy/terms',
-        destination: 'http://localhost:3000/terms.html',
+        destination: 'https://front-end-ashy-alpha.vercel.app/terms.html',
       },
       {
         source: '/policy/privacy',
-        destination: 'http://localhost:3000/privacy.html',
+        destination: 'https://front-end-ashy-alpha.vercel.app/privacy.html',
       },
       {
         source: '/faq',
-        destination: 'http://localhost:3000/faq.html',
+        destination: 'https://front-end-ashy-alpha.vercel.app/faq.html',
       },
       {
         source: '/aboutus',
-        destination: 'http://localhost:3000/aboutus.html',
+        destination: 'https://front-end-ashy-alpha.vercel.app/aboutus.html',
       },
     ]
   },

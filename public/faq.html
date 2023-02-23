@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Frequently Asked Questions | LegalDoji</title>
+  <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="/styles/general.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/style.scss">
+  <link rel="stylesheet" href="/styles/responsive.css">
+  <link rel="stylesheet" href="/styles/mediaq.css">
+<style>
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+.faq h3 {
+  font-size: 1.75rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #00a6ff;
+}
+.accordion a:hover::after {
+  border: 1px solid #00a6ff;
+}
+.accordion a.active {
+  color: #00a6ff;
+  border-bottom: 1px solid #00a6ff;
+}
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #00a6ff;
+  border: 1px solid #00a6ff;
+}
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+</style>
+
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="col-12 just-cnt-cent align-itm-cent">
+      <div class="cont col-12 just-cnt-spbw align-itm-cent">
+          <div class="h-logo just-cnt-spbw align-itm-cent">
+            <a href="/" style="height:40px;"><img src="/images/h-logo-dark.png" alt="Logo" class="just-cnt-spbw align-itm-cent col-12"></a>
+          </div>
+          <nav class="col-6 just-cnt-cent align-itm-cent displ-tab">
+              <!-- <ul class="col-12 just-cnt-cent align-itm-cent">
+                  <li class="just-cnt-cent align-itm-cent"><a class="just-cnt-cent align-itm-cent" href="https;//legaldoji.com">Home</a></li>
+                  <li class="just-cnt-cent align-itm-cent"><a class="just-cnt-cent align-itm-cent" href="#">About-Us</a></li>
+                  <li class="just-cnt-cent align-itm-cent"><a class="just-cnt-cent align-itm-cent" href="# ">FAQs</a></li>
+                  <li class="just-cnt-cent align-itm-cent"><a class="just-cnt-cent align-itm-cent" href="#">Join-Us</a></li>
+              </ul> -->
+          </nav>
+          <div class="h-btns align-itm-cent">
+              <a href="/login" class="jose displ-tab">Login</a>
+              <a href="/signup" class="jose displ-tab">Signup</a>
+          <button type="button" class="toggle-side-bar" id="toggSideBtn"><i class="fas fa-bars"></i></button type="button">
+          </div>
+      </div>
+  </header>
+  <!-- Header End -->
+
+    <!-- Sidebar Start -->
+    <div class="sidebar displ-flx col-12 flx-d-col inactive" style="
+    height: 300px;
+    position: fixed;
+    max-width:400px;
+    transform-origin: right;
+    top: 50px;
+    left: 0;
+    padding: 10px 0;
+    transform-style: preserve-3d;
+    z-index: 1000;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(12, 12, 12, 0.34);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.182);" id="sideMenu">
+      <a style="padding:10px;text-align:left;width:100%;border-bottom:1px solid #3737372b" href="/">Home</a>
+      <a style="padding:10px;text-align:left;width:100%;border-bottom:1px solid #3737372b" href="/about-us">About Us</a>
+      <a style="padding:10px;text-align:left;width:100%;border-bottom:1px solid #3737372b" href="/faq">FAQ</a>
+      <a style="padding:10px;text-align:left;width:100%;border-bottom:1px solid #3737372b" href="/signupa">Join Us</a>
+      <div class="align-itm-cent" style="margin: 10px;">
+        <a class="displ-flx just-cnt-cent align-itm-cent" style="margin:10px;padding:10px;text-align:left;
+        background: linear-gradient(92.27deg, #00a6fffe 24.1%, #004e97 105.81%);width:100%;border-bottom:1px solid #3737372b;border-radius:30px;min-width:100px;max-width:100px;color:#fff;" href="/login">Login</a>
+        <a class="displ-flx just-cnt-cent align-itm-cent" style="margin:10px;padding:10px;text-align:left;
+        background: linear-gradient(92.27deg, #00a6fffe 24.1%, #004e97 105.81%);width:100%;border-bottom:1px solid #3737372b;border-radius:30px;min-width:100px;max-width:100px;color:#fff;" href="/signup">Sign Up</a>
+      </div>
+    </div>
+    <!-- Sidebar End -->
+    <!-- Sidebar Script -->
+    <script>
+      document.getElementById('sideMenu').style.transform = "translateX(100vw)";
+      document.getElementById('sideMenu').style.transition = "all 0.4s ease-in"; 
+      document.getElementById('toggSideBtn').addEventListener("click", function () {
+        // document.querySelector('.sidebar.active').style.transform = "translateX(-100vw)";
+        // document.querySelector('.sidebar.inactive').style.transform = "translateX(-100vw)";
+        if (document.getElementById('sideMenu').classList.contains("active")) {
+          document.getElementById('sideMenu').style.transform = "translateX(100vw)"
+          document.getElementById('sideMenu').classList.remove("active")
+        } else {
+          document.getElementById('sideMenu').style.transform = "translateX(calc(100vw - 300px))"
+          document.getElementById('sideMenu').classList.add("active")
+        }
+      })
+    </script>
+    <!-- Sidebar Script end -->
+    <style>
+      .faqcontainer {
+        margin: 0 auto;
+        padding: 4rem;
+        width: 48rem;
+      }
+      .faq h2 {
+        font-size: 1.75rem;
+        color: #ffffff;
+        /* padding: 1.3rem; */
+        margin: 20px 0;
+      }
+      .accordion a {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        padding: 15px 5px;
+        margin: 5px 0;
+        color: #00a6ff;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border-bottom: 1px solid #e5e5e51d;
+      }
+      .accordion a:hover,
+      .accordion a:hover::after {
+        cursor: pointer;
+        color: #00a6ff;
+      }
+      .accordion a:hover::after {
+        border: 1px solid #00a6ff;
+      }
+      .accordion a.active {
+        color: #00a6ff;
+        border-bottom: 1px solid #00a6ff;
+      }
+@media only screen and (min-width: 768px) {
+      .accordion a::after {
+          display: flex;
+          align-items: center;
+        justify-content: center;
+        font-family: 'Ionicons';
+        content: '\f218';
+        position: absolute;
+        float: right;
+        right: 1rem;
+        font-size: 1rem;
+        color: #7288a2;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 1px solid #7288a2;
+        text-align: center;
+      }
+      .accordion a.active::after {
+        font-family: 'Ionicons';
+        content: '\f209';
+        color: #00a6ff;
+        border: 1px solid #00a6ff;
+      }
+}
+      .accordion .content {
+        opacity: 0;
+        padding: 0 1rem;
+        max-height: 0;
+        border-bottom: 1px solid #e5e5e5;
+        overflow: hidden;
+        clear: both;
+        -webkit-transition: all 0.2s ease 0.15s;
+        -o-transition: all 0.2s ease 0.15s;
+        transition: all 0.2s ease 0.15s;
+      }
+      .accordion .content p {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .accordion .content.active {
+        opacity: 1;
+        padding: 1rem;
+        max-height: 100%;
+        -webkit-transition: all 0.35s ease 0.15s;
+        -o-transition: all 0.35s ease 0.15s;
+        transition: all 0.35s ease 0.15s;
+      }
+      </style>
+      
+    <div class="faq col-12 displ-flx just-cnt-cent align-itm-cent">
+                
+      <div class="faqcontainer col-12">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <a>What types of cases are handled by advocates of LegalDoji?</a>
+      <div class="content">
+        <p>Our advocates specialize in a wide range of legal issues, including but not limited to Civil cases, criminal cases, family law, employment law, and more.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Is LegalDoji a law firm?</a>
+      <div class="content">
+        <p>Service cost/consultancy fee is decided by the respective advocates. You can log in to our dashboard and filter advocates as per your budget.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>What are the other filter options available for selecting an advocate?</a>
+      <div class="content">
+        <p>You can filter an advocate by their district, by their practice area, by their experience and by their consultancy fee.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How do I book a consultation?</a>
+      <div class="content">
+        <p>Booking a consultation is easier than writing this, all you need to do is to sign in, choose your advocate, pay the consultancy fee and you are done.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>What payment method is accepted by you?</a>
+      <div class="content">
+        <p>We accept UPI, Debit card, Credit Card and Netbanking for payments.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Can I get an advocate from my local area?</a>
+      <div class="content">
+        <p>You can search for an advocate from our filter.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How long will it take to resolve my case?</a>
+      <div class="content">
+        <p>No case is the same and therefore every case has its own timeline to get resolved. With the guidance from our expert advocates you can be sure to get it resolved ASAP</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Do you offer legal services in languages other than English?</a>
+      <div class="content">
+        <p>We have advocates from every part of India be it East or West, North or South. So you can always get an advocate for your preferred language.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Do you offer free initial consultations?</a>
+      <div class="content">
+        <p>No</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>What should I bring to my initial consultation?</a>
+      <div class="content">
+        <p>It is helpful if you bring any relevant documents or information related to your case to your initial
+            consultation. This may include police reports, medical records, or any other documentation that may be relevant to your case.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Do you offer representation in court?</a>
+      <div class="content">
+        <p>Yes, our attorneys are experienced litigators and are prepared to represent you in court if necessary.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How can I contact your firm if I have an emergency?</a>
+      <div class="content">
+        <p>If you have an emergency and need to speak with an attorney urgently, please call our main office number and follow the prompts to reach our after-hours emergency line. Someone will be available to assist you.</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+<!-- Footer Start -->
+<footer class="col-12 just-cnt-cent align-itm-cent flx-d-col">
+  <div class="cont col-12 just-cnt-cent align-itm-cent flx-wrp">
+      <div class="sub-cont col-12 col-md-3 flx-d-col just-cnt-cent align-itm-cent">
+          <img src="/images/main-logo.png" alt="" class="col-12">
+      </div>
+      <div class="sub-cont col-12 col-md-4 flx-d-col just-cnt-cent align-itm-cent">
+          <h3>Site Links</h3>
+          <a href="/">Home</a>
+          <a href="/about-us">About Us</a>
+          <a href="/faq">FAQ</a>
+          <a href="/signupa">Join Us</a>
+      </div>
+      <div class="sub-cont col-12 col-md-4 just-cnt-cent align-itm-cent">
+          <a href="https://www.instagram.com/legaldoji"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@legaldoji"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.twitter.com/legaldoji"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/86867901/admin/"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </div>
+  <div class="copyr col-6 just-cnt-spev align-itm-cent txt-al-cent flx-wrp">
+      <a href="/policy/terms" style="color:#fff">Terms and Conditions</a>
+      <a href="/policy/privacy" style="color:#fff">Privacy Policy</a>
+      <a href="/policy/refund" style="color:#fff">Refunds Policy</a>
+  </div>
+  <div class="copyr col-12 just-cnt-cent align-itm-cent">
+    <p class="col-12 txt-al-cent" style="color: #fff;">Copyright &copy; 2022, Litsurance Legal Solutions LLP, All Rights Reserved</p>
+  </div>
+</footer>
+<!-- Footer End -->
+
+    <script src="https://kit.fontawesome.com/c758c8bec9.js" crossorigin="anonymous"></script>
+    <script src="./scripts/vanilla-tilt.js"></script>
+    <script src="./scripts/app.js"></script>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script>
+    // Code By Webdevtrick ( https://webdevtrick.com )
+const items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+
+</body>
+</html>

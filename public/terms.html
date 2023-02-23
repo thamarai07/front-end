@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <title>LegalDoji | Home</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/mediaq.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="col-12 just-cnt-cent align-itm-cent">
+        <div class="cont col-12 just-cnt-spbw align-itm-cent">
+            <div class="h-logo just-cnt-spbw align-itm-cent">
+                <a href="/" style="height:40px;"><img src="/images/h-logo-dark.png" alt="Logo" class="just-cnt-spbw align-itm-cent col-12"></a>
+            </div>
+            <nav class="col-6 just-cnt-cent align-itm-cent displ-tab">
+                <!-- <ul class="col-12 just-cnt-cent align-itm-cent">
+                    <li class="just-cnt-cent align-itm-cent"><a class="just-cnt-cent align-itm-cent" href="https;//legaldoji.com">Home</a></li>
+                    <li class="just-cnt-cent align-itm-cent"><a class="just-cnt-cent align-itm-cent" href="#">About-Us</a></li>
+                    <li class="just-cnt-cent align-itm-cent"><a class="just-cnt-cent align-itm-cent" href="# ">FAQs</a></li>
+                    <li class="just-cnt-cent align-itm-cent"><a class="just-cnt-cent align-itm-cent" href="#">Join-Us</a></li>
+                </ul> -->
+            </nav>
+            <div class="h-btns align-itm-cent">
+                <a href="/login" class="jose displ-tab">Login</a>
+                <a href="/signup" class="jose displ-tab">Signup</a>
+            <button type="button" class="toggle-side-bar" id="toggSideBtn"><i class="fas fa-bars"></i></button type="button">
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar Start -->
+    <div class="sidebar displ-flx col-12 flx-d-col inactive" style="
+    height: 300px;
+    position: fixed;
+    max-width:400px;
+    transform-origin: right;
+    top: 50px;
+    left: 0;
+    padding: 10px 0;
+    transform-style: preserve-3d;
+    z-index: 1000;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(12, 12, 12, 0.34);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.182);" id="sideMenu">
+      <a style="padding:10px;text-align:left;width:100%;border-bottom:1px solid #3737372b" href="/">Home</a>
+      <a style="padding:10px;text-align:left;width:100%;border-bottom:1px solid #3737372b" href="/about-us">About Us</a>
+      <a style="padding:10px;text-align:left;width:100%;border-bottom:1px solid #3737372b" href="/faq">FAQ</a>
+      <a style="padding:10px;text-align:left;width:100%;border-bottom:1px solid #3737372b" href="/signupa">Join Us</a>
+      <div class="align-itm-cent" style="margin: 10px;">
+        <a class="displ-flx just-cnt-cent align-itm-cent" style="margin:10px;padding:10px;text-align:left;
+        background: linear-gradient(92.27deg, #00a6fffe 24.1%, #004e97 105.81%);width:100%;border-bottom:1px solid #3737372b;border-radius:30px;min-width:100px;max-width:100px;color:#fff;" href="/login">Login</a>
+        <a class="displ-flx just-cnt-cent align-itm-cent" style="margin:10px;padding:10px;text-align:left;
+        background: linear-gradient(92.27deg, #00a6fffe 24.1%, #004e97 105.81%);width:100%;border-bottom:1px solid #3737372b;border-radius:30px;min-width:100px;max-width:100px;color:#fff;" href="/signup">Sign Up</a>
+      </div>
+    </div>
+    <!-- Sidebar End -->
+    <!-- Sidebar Script -->
+    <script>
+      document.getElementById('sideMenu').style.transform = "translateX(100vw)";
+      document.getElementById('sideMenu').style.transition = "all 0.4s ease-in"; 
+      document.getElementById('toggSideBtn').addEventListener("click", function () {
+        // document.querySelector('.sidebar.active').style.transform = "translateX(-100vw)";
+        // document.querySelector('.sidebar.inactive').style.transform = "translateX(-100vw)";
+        if (document.getElementById('sideMenu').classList.contains("active")) {
+          document.getElementById('sideMenu').style.transform = "translateX(100vw)"
+          document.getElementById('sideMenu').classList.remove("active")
+        } else {
+          document.getElementById('sideMenu').style.transform = "translateX(calc(100vw - 300px))"
+          document.getElementById('sideMenu').classList.add("active")
+        }
+      })
+    </script>
+    <!-- Sidebar Script end -->
+    <!-- Main Start -->
+    <main class="col-12">
+        <div class="cont col-12 just-cnt-cent flx-d-col align-itm-cent">
+            <div class="col-10">
+                <h1>Terms and Conditions</h1><br/>
+Litsurance Legal Solutions LLP, on behalf of itself and its affiliates/group companies under the brand "LegalDoji" (“LegalDoji”), is the author and publisher of the internet resource www.LegalDoji.com (“Website”). <br/><br/>
+
+<h2>1. NATURE AND APPLICABILITY OF TERMS</h2><br/><br/>
+Please carefully go through these terms and conditions (“Terms”) and the privacy policy available at https://www.LegalDoji.com (“Privacy Policy”) before you decide to access the Website or avail of the services made available on the Website by LegalDoji. These Terms and the Privacy Policy together constitute a legal agreement (“Agreement”) between you and LegalDoji in connection with your visit to the Website and your use of the Services (as defined below).<br/><br/>
+
+The Agreement applies to you whether you are -<br/>
+An Advocate wishing to be listed, or already listed, on the Website, including designated, authorized associates of such advocates or institutions (“Advocate(s)”, “you” or “User”); or<br/><br/>
+
+A client, his/her representatives, or affiliates, searching for advocates through the Website (“End-User”, “you” or “User”); or otherwise a user of the Website (“you” or “User”).<br/><br/>
+
+This Agreement applies to those services made available by LegalDoji on the Website, which are offered free of charge to the Users (“Services”), including the following:<br/><br/>
+
+<ul>
+    <li>FOR ADVOCATES:Listing of advocates and their profiles and contact details, to be made available to the other Users and visitors to the Website;</li> <br/>
+    <li>FOR OTHER USERS:Facility to (i) create and maintain ‘Legal Accounts’, (ii) search for advocates by name, specialty, and geographical area, or any other criteria that may be developed and made available by LegalDoji, and (iii) to make appointments with advocates.</li>
+</ul><br/>
+
+
+The Services may change from time to time, at the sole discretion of LegalDoji, and the Agreement will apply to your visit to and your use of the Website to avail the Service, as well as to all information provided by you on the Website at any given point in time.<br/><br/>
+
+This Agreement defines the terms and conditions under which you are allowed to use the Website and describes how we shall treat your account while you are registered as a member with us. If you have any questions about any part of the Agreement, feel free to contact us at support@LegalDoji.com.<br/><br/>
+
+By accessing the Website to use the Services, you irrevocably accept all the conditions stipulated in this Agreement and Privacy Policy, as available on the Website, and agree to abide by them. This Agreement supersedes all previous oral and written terms and conditions (if any) communicated to you relating to your use of the Website to avail of the Services. By availing of any Service, you signify your acceptance of the terms of this Agreement.<br/><br/>
+
+We reserve the right to modify or terminate any portion of the Agreement for any reason and at any time, and such modifications shall be informed to you in writing. You should read the Agreement at regular intervals. Your use of the Website following any such modification constitutes your agreement to follow and be bound by the Agreement so modified.<br/><br/>
+
+You acknowledge that you will be bound by this Agreement for availing of any of the Services offered by us. If you do not agree with any part of the Agreement, please do not use the Website or avail of any Services.<br/><br/>
+
+Your access to the use of the Website and the Services will be solely at the discretion of LegalDoji.<br/><br/>
+
+The Agreement is published in compliance with, and is governed by the provisions of Indian law, including but not limited to:<br/>
+
+the Indian Contract Act, of 1872,<br/><br/>
+
+the (Indian) Information Technology Act, 2000, and<br/><br/>
+
+the rules, regulations, guidelines, and clarifications framed there under, including the (Indian) Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Information) Rules, 2011 (the “SPI Rules”), and the (Indian) Information Technology (Intermediaries Guidelines) Rules, 2011 (the “IG Rules”).<br/><br/>
+
+<h2>2. CONDITIONS OF USE</h2><br/><br/>
+You must be 18 years of age or older to register, use the Services, or visit or use the Website in any manner. By registering, visiting, and using the Website or accepting this Agreement, you represent and warrant to LegalDoji that you are 18 years of age or older and that you have the right, authority, and capacity to use the Website and the Services available through the Website, and agree to and abide by this Agreement.<br/><br/>
+<h2>3. TERMS OF USE APPLICABLE TO ALL USERS OTHER THAN ADVOCATES</h2><br/><br/>The terms in this Clause 3 apply only to Users other than advocates.<br/><br/>
+<h3>3.1 END-USER ACCOUNT AND DATA PRIVACY</h3><br/><br/>
+<ul>
+    <li>The terms “personal information” and “sensitive personal data or information” are defined under the SPI Rules and are reproduced in the Privacy Policy.</li><br/>
+    <li>LegalDoji may by its Services, collect information relating to the devices through which you access the Website and anonymous data of your usage. The collected information will be used only for improving the quality of LegalDoji’s services and to build new services.</li><br/>
+    <li>The Website allows LegalDoji to have access to registered Users’ email or phone numbers, for communication purposes to provide you with a better way of booking appointments and obtaining feedback concerning the advocates and their practice.</li><br/>
+    <li>The Privacy Policy sets out, inter-alia: The type of information collected from Users, including sensitive personal data or information; The purpose, means, and modes of usage of such information; How and to whom LegalDoji will disclose such information; and, Other information mandated by the SPI Rules.</li><br/>
+    <li>The User is expected to read and understand the Privacy Policy, to ensure that he or she knows, inter-alia: the fact that certain information is being collected; the purpose for which the information is being collected; the intended recipients of the information; the nature of collection and retention of the information; and the name and address of the agency that is collecting the information and the agency that will retain the information; and the various rights available to such Users in respect of such information.</li><br/>
+    <li>LegalDoji shall not be responsible in any manner for the authenticity of the personal information or sensitive personal data or information supplied by the User to LegalDoji or any other person acting on behalf of LegalDoji.</li><br/>
+    <li>The User is responsible for maintaining the confidentiality of the User’s account access information and password if the User is registered on the Website. The User shall be responsible for all usage of the User’s account and password, whether or not authorized by the User. The User shall immediately notify LegalDoji of any actual or suspected unauthorized use of the User’s account or password. Although LegalDoji will not be liable for your losses caused by any unauthorized use of your account, you may be liable for the losses of LegalDoji or such other parties as the case may be, due to any unauthorized use of your account.</li><br/>
+    <li>If a User provides any information that is untrue, inaccurate, not current or incomplete (or becomes untrue, inaccurate, not current or incomplete), or LegalDoji has reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, LegalDoji has the right to discontinue the Services to the User at its sole discretion.</li><br/>
+    <li>LegalDoji may use such information collected from the Users frequently to debug customer support-related issues.</li><br/>
+</ul>
+<h3>3.2 RELEVANCE ALGORITHM</h3><br/><br/>LegalDoji’s relevance algorithm for the advocates is a fully automated system that lists the advocates, their profiles, and information regarding their Practice on its Website. These listings of advocates do not represent any fixed objective ranking or endorsement by LegalDoji. LegalDoji will not be liable for any change in the relevance of the advocates on search results, which may take place from time to time. The listing of advocates will be based on automated computation of the various factors including inputs made by the Users including their comments and feedback. Such factors may change from time to time, to improve the listing algorithm. LegalDoji in no event will be held responsible for the accuracy and the relevancy of the listing order of the advocates on the Website.<br/><br/>
+
+<h3>3.3 LISTING CONTENT AND DISSEMINATING INFORMATION</h3><br/><br/>
+<ul>
+    <li>LegalDoji collects, directly or indirectly, and displays on the Website, relevant information regarding the profile and practice of the advocates listed on the Website, such as their specialization, qualification, fees, location, visiting hours, and similar details. LegalDoji takes reasonable efforts to ensure that such information is updated at frequent intervals. Although LegalDoji screens and vets the information and photos submitted by the advocates, it cannot be held liable for any inaccuracies or incompleteness represented by it, despite such reasonable efforts.</li><br/>
+    <li>The Services provided by LegalDoji or any of its licensors or service providers are provided on an "as is" and “as available basis, and without any warranties or conditions (express or implied, including the implied warranties of merchantability, accuracy, fitness for a particular purpose, title and non-infringement, arising by statute or otherwise in law or from a course of dealing or usage or trade). LegalDoji does not provide or make any representation, warranty or guarantee, express or implied about the Website or the Services. LegalDoji does not guarantee the accuracy or completeness of any content or information provided by Users on the Website. To the fullest extent permitted by law, LegalDoji disclaims all liability arising out of the User’s use or reliance upon the Website, the Services, representations and warranties made by other Users, the content or information provided by the Users on the Website, or any opinion or suggestion given or expressed by LegalDoji or any User concerning any User or services provided by such User.</li><br/>
+    <li>The Website may be linked to the website of third parties, affiliates, and business partners. LegalDoji has no control over and is not liable or responsible for the content, accuracy, validity, reliability, and quality of such websites or made available by/through our Website. The inclusion of any link on the Website does not imply that LegalDoji endorses the linked site. Users may use the links and these services at the User’s own risk.</li><br/>
+    <li>LegalDoji assumes no responsibility, and shall not be liable for, any damages to, or viruses that may infect User’s equipment on account of User’s access to, use of, or browsing the Website or the downloading of any material, data, text, images, video content, or audio content from the Website. If a User is dissatisfied with the Website, the User’s sole remedy is to discontinue using the Website.</li><br/>
+    <li>If LegalDoji determines that you have provided fraudulent, inaccurate, or incomplete information, including through feedback, LegalDoji reserves the right to immediately suspend your access to the Website or any of your accounts with LegalDoji and makes such declaration on the website alongside your name as determined by LegalDoji for the protection of its business and in the interests of Users. You shall be liable to indemnify LegalDoji for any losses incurred as a result of your misrepresentations or fraudulent feedback that has adversely affected LegalDoji or its Users.</li><br/>
+</ul>
+<h3>3.4 BOOK APPOINTMENT</h3><br/><br/>LegalDoji enables Users to connect with advocates through book facility that allows Users to book an appointment through the Website;<br/><br/>
+<ul>
+    <li>LegalDoji will ensure Users are provided with confirmed appointments on the Book facility. However, LegalDoji has no liability if such an appointment is later cancelled by the advocates, or the same advocate is not available for an appointment.</li><br/>
+    <li>The results of any search Users perform on the Website for advocates should not be construed as an endorsement by LegalDoji of any such particular advocates. If the User decides to engage with an advocate to seek legal services, the User shall be doing so at his/her own risk.</li><br/>
+    <li>Without prejudice to the generality of the above, LegalDoji is not involved in providing any legal advice and hence is not responsible for any interactions between the User and the advocates. The user understands and agrees that LegalDoji will not be liable for:</li><br/>
+</ul>
+User interactions and associated issues User has with the advocates; the ability or intent of the advocates(s) or the lack of it, in fulfilling their obligations towards Users; any wrong consultation or quality of advice being given by the advocate(s), or any legal negligence on part of the advocate(s); inappropriate advice, or similar difficulties or any type of inconvenience suffered by the User due to a failure on the part of the advocates to provide agreed Services; any misconduct or inappropriate behaviour by the advocates or the advocate’s staff; cancellation or no-show by the advocates or rescheduling of booked appointments or any variation in the fees charged.<br/><br/>
+<ul>
+    <li>Users are allowed to provide feedback about their experiences with the advocates, however, the User shall ensure that the same is provided in accordance with applicable law. The user however understands that LegalDoji shall not be obliged to act in such manner as may be required to give effect to the content of Users feedback, such as suggestions for delisting a particular advocate from the Website.</li><br/>
+    <li>In case of a ‘Client-No-Show (C.N.S)’ (defined below), where the User does not show up at the concerned advocate's appointment:</li><br/>
+</ul>The user’s account will be temporarily disabled from booking further online appointments on LegalDoji.com for the next four (4) months, in case of, three(3) Valid CNS, as per the Client-No-Show Policy.<br/><br/>
+
+Client- No-Show (C.N.S) for these Terms and Conditions, is defined as, any instance where a User, who booked an appointment on the Website using the Booking facility, has not turned up for the appointment without cancelling, rescheduling, or informing the advocates in advance about the same. When an advocate informs LegalDoji of the incident or marks a particular appointment as C.N.S. within five (5) days of the scheduled appointment, an email and SMS (“CNS Communication”) will be sent to the User to confirm the incident with reasons. Where the User is not able to establish that the User had a legitimate reason for not showing up, LegalDoji shall be entitled to take. However Users understand that actions such as the ones mentioned are included as a deterrent to stop Users from misusing the Website, and the loss of business hours incurred by the advocates.<br/><br/>
+
+The following instances, solely at the discretion of LegalDoji, would be construed as valid cases of CNS (“Valid CNS”), in which case the User shall be penalized:<br/><br/>
+
+User does not reply within seven (7) days, with reasons to CNS Communication, from the date of receipt of such CNS Communication; in case the User responds to the CNS Communication with below reasons:<br/><br/>
+
+Forgot the appointment<br/><br/>
+
+Chose to visit another advocate/consulted online;<br/><br/>
+
+Busy with other work; or such other reasons (which LegalDoji at its discretion decides to be a valid reason to not show up).<br/><br/>
+
+Where the User has booked a paid appointment and is unable to visit the advocates, due to such genuine reasons of sickness, etc. at the sole discretion of LegalDoji, pursuant to conducting of investigation, the User shall be provided with a refund of such payment made by User, at the time of booking. However, where cancellation charges have been levied, you would not be entitled to a complete refund.<br/><br/>
+
+LegalDoji reserves the right to make the final decision in case of a conflict. The total aggregate liability of LegalDoji with respect to any claims made herein shall be INR 200.<br/><br/>
+
+<ul>
+    <li>Cancellation and Refund Policy</li><br/>
+</ul>
+
+In the event that the advocates with whom the User has booked a paid appointment via the Website, have not been able to meet the User, the User will need to write to us at support@LegalDoji.com within five (5) days from the occurrence of such an event; in which case, the entire consultation amount as mentioned on the Website will be refunded to the User within the next five (5) to six (6) business days in the original mode of payment done by the User while booking. In the case where the User does not show up for the appointment booked with an advocate, without cancelling the appointment beforehand, the amount will not be refunded and treated. However, where cancellation charges have been levied (as charged by the advocates), you would not be entitled to a complete refund even if you have cancelled beforehand.<br/><br/>
+
+Users will not be entitled to any refunds in cases where, the advocate is unable to meet the User at the exact time of the scheduled appointment time and the User is required to wait, irrespective of the fact whether the User is required to wait or choose to not obtain the legal services from the said advocates.<br/><br/>
+
+<h3>3.5 NO ADVOCATE-CLIENT RELATIONSHIP; NOT FOR EMERGENCY USE</h3><br/><br/>
+<ul>
+    <li>Please note that some of the content, text, data, graphics, images, information, suggestions, guidance and other material (collectively, “Information”) that may be available on the Website (including information provided in direct response to your questions or postings) may be provided by individuals in the legal profession. The provision of such Information does not create a licensed legal professional/Client relationship, between LegalDoji and you and does not constitute an opinion, legal advice, or advice of any particular condition, but is only provided to assist you with locating appropriate legal consultation from a qualified advocate.</li><br/>
+    <li>It is hereby expressly clarified that the Information that you obtain or receive from LegalDoji, and its employees, contractors, partners, sponsors, advertisers, licensors, or otherwise on the Website is for informational purposes only. We make no guarantees, representations, or warranties, whether expressed or implied, with respect to professional qualifications, quality of work, expertise, or other information provided on the Website. In no event shall we be liable to you or anyone else for any decision made or action taken by you in reliance on such information.</li><br>
+</ul>
+<h3>3.6 LEGALDOJI LEGAL FEED</h3><br/><br/>These terms & conditions governing LegalDoji legal fees are applicable to Users (being both end-users/ advocates). However, it is clarified that the terms and conditions herein apply only to advocates and are applicable to Users who are called out separately, as the context warrants.<br/><br/>
+<ul>
+    <li>LegalDoji legal feed is an online content platform available on the Website, wherein advocates who have created a LegalDoji profile can log in and post legal and wellness-related content.</li><br/>
+    <li>Advocates can use LegalDoji legal feed by logging in from their legal account, creating original content comprising text, audio, video, images, data, or any combination of the same (“Content”), and uploading said Content to LegalDoji’s servers. LegalDoji will make available to the User a gallery of images licensed by LegalDoji from a third-party stock image provider (“LegalDoji Gallery”). The User can upload their own images or choose an image from the LegalDoji Gallery. LegalDoji does not provide any warranty as to the ownership of the intellectual property in the LegalDoji Gallery and the User acknowledges that the User will use the images from the LegalDoji Gallery at their own risk. LegalDoji shall post such Content to LegalDoji legal feed at its own option and subject to these Terms and Conditions. The Content uploaded via LegalDoji legal feed does not constitute legal advice and may not be construed as such by any person.</li><br/>
+    <li>Advocate acknowledges that they are the original authors and creators of any Content uploaded by them via LegalDoji legal feed and that no Content uploaded by them would constitute an infringement of the intellectual property rights of any other person. LegalDoji reserves the right to remove any Content that it may determine at its own discretion as violating the intellectual property rights of any other person, including but not limited to patent, trademark, copyright, or other proprietary rights. advocates agree to absolve LegalDoji from and indemnify LegalDoji against all claims that may arise as a result of any third party intellectual property right claim that may arise from the advocate's uploading of any Content on the LegalDoji legal feed. The advocates may not use the images in the LegalDoji Gallery for any purpose other than those directly related to the creation and uploading of Content to the LegalDoji legal feed. The advocates also agree to absolve LegalDoji from and indemnify LegalDoji against all claims that may arise as a result of any third party intellectual property claim if the advocate downloads, copies, or otherwise utilises an image from the LegalDoji Gallery for his/her personal or commercial gain.</li><br/>
+    <li>Advocates hereby assign to LegalDoji, in perpetuity and worldwide, all intellectual property rights in any Content created by the User and uploaded by the User via LegalDoji legal feed.</li><br/>
+    <li>LegalDoji shall have the right to edit or remove the Content and any comments in such manner as it may deem LegalDoji legal feed at any time.</li><br/>
+    <li>Advocates shall ensure that the Content or any further responses to the Content (including responses to Users) is not harmful, harassing, blasphemous, defamatory, obscene, pornographic, paedophilic, or libellous in any manner. Further, advocates should ensure that the Content is not invasive of any other person’s privacy, or otherwise contains any hateful elements, racially or ethnically objectionable, disparaging, or otherwise unlawful in any manner. LegalDoji reserves the right to remove any Content that it may determine at its own discretion is violative of these Terms and Conditions or any law or statute in force at the time. Also, the advocates agree to absolve LegalDoji from and indemnify LegalDoji against all claims that may arise as a result of any legal claim arising from the nature of the Content posted by the advocates on LegalDoji legal Feed.</li><br/>
+    <li>Advocates shall ensure that no portion of the Content is violative of any law for the time being in force.</li><br/>
+    <li>Advocates shall ensure that the Content is not threatening the unity, integrity, defence, security, or sovereignty of India, friendly relations with foreign states, or public order. Further, the advocates shall ensure that the Content will not cause incitement to the commission of any cognizable offence or prevent investigation of any offence or is insulting to any other nation.</li><br/>
+    <li>Users may also use LegalDoji legal feed in order to view original content created by advocates and to create and upload comments on such Content, where allowed (“User Comment”).</li><br/>
+    <li>User acknowledges that the User Comment reflects the views and opinions of the authors of such Content and does not necessarily reflect the views of LegalDoji.</li><br/>
+    <li>User agrees that the Content they access on LegalDoji legal feed does not in any way constitute legal advice and that the responsibility for any act or omission by the User arising from the User’s interpretation of the Content, is solely attributable to the User. The User agrees to absolve LegalDoji from and indemnify LegalDoji against all claims that may arise as a result of the User’s actions resulting from the User’s viewing of Content on LegalDoji legal feed.</li><br/>
+    <li>User acknowledges that all intellectual property rights in the User Comment on LegalDoji legal feed vests with LegalDoji. The User agrees not to infringe upon LegalDoji’s intellectual property by copying or plagiarising content on LegalDoji legal feed. LegalDoji reserves its right to initiate all necessary legal remedies available to them in case of such an infringement by the User. Also, User Comment will be the sole intellectual property of LegalDoji. The User agrees not to post User Comments that would violate the intellectual property of any third party, including but not limited to patent, trademark, copyright, or other proprietary rights. LegalDoji reserves the right to remove any User Comment that it may determine at its own discretion as violating the intellectual property rights of any third party. The User agrees to absolve LegalDoji from and indemnify LegalDoji against all claims that may arise as a result of any third-party intellectual property right claim that may arise from the User Comment.</li><br/>
+    <li>User shall ensure that the User Comment is not harmful, harassing, blasphemous, defamatory, obscene, pornographic, paedophilic, or libellous in any manner. Further, the User should ensure that the User Comment is not invasive of any other person’s privacy, or otherwise contains any hateful elements, racially or ethnically objectionable, disparaging, or otherwise unlawful in any manner. LegalDoji reserves the right to remove any Content that it may determine at its discretion is violative of these Terms and Conditions or any law or statute in force at the time Also, the User agrees to absolve LegalDoji from and indemnify LegalDoji against all claims that may arise as a result of any legal claim arising from the nature of the User Comment.</li><br/>
+    <li>User shall ensure that the User Comment is not threatening the unity, integrity, defence, security, or sovereignty of India, friendly relations with foreign states, or public order. Further, the advocates shall ensure that the User Comment will not cause incitement to the commission of any cognizable offence or prevent investigation of any offence or is insulting to any other nation.</li><br/>
+</ul>
+<h3>3.7 CONTENT OWNERSHIP AND COPYRIGHT CONDITIONS OF ACCESS</h3><br/><br/>
+<ul>
+    <li>The contents listed on the Website are (i) User-generated content, or (ii) belong to LegalDoji. The information that is collected by LegalDoji directly or indirectly from the End- Users and the advocates shall belong to LegalDoji. Copying of the copyrighted content published by LegalDoji on the Website for any commercial purpose or for the purpose of earning profit will be a violation of copyright and LegalDoji reserves its rights under applicable law accordingly.</li><br/>
+    <li>LegalDoji authorises the User to view and access the content available on or from the Website solely for ordering, receiving, delivering, and communicating only as per this Agreement. The contents of the Website, information, text, graphics, images, logos, button icons, software code, design, and the collection, arrangement, and assembly of content on the Website (collectively, "LegalDoji Content"), are the property of LegalDoji and are protected under copyright, trademark, and other laws. Users shall not modify the LegalDoji Content or reproduce, display, publicly perform, distribute, or otherwise use the LegalDoji Content in any way for any public or commercial purpose or for personal gain.</li><br/>
+    <li>Users shall not access the Services for purposes of monitoring their availability, performance, or functionality, or for any other benchmarking or competitive purposes.</li><br/>
+</ul>
+<h3>3.8 REVIEWS AND FEEDBACK</h3><br/><br/>
+By using this website, you agree that any information shared by you with LegalDoji or with any advocates will be subject to our Privacy Policy.<br/><br/>
+You are solely responsible for the content that you choose to submit for publication on the Website, including any feedback, ratings, or reviews (“Critical Content”) relating to advocates or other professionals. The role of LegalDoji in publishing Critical Content is restricted to that of an ‘intermediary’ under the Information Technology Act, of 2000.<br/><br/> LegalDoji disclaims all responsibility with respect to the content of Critical Content, and its role with respect to such content is restricted to its obligations as an ‘intermediary’ under the said Act. LegalDoji shall not be liable to pay any consideration to any User for re-publishing any content across any of its platforms.<br/><br/>
+Your publication of reviews and feedback on the Website is governed by Clause 5 of these Terms. Without prejudice to the detailed terms stated in Clause 5, you hereby agree not to post or publish any content on the Website that (a) infringes any third-party intellectual property or publicity, or privacy rights, or (b) violates any applicable law or regulation, including but not limited to the IG Rules and SPI Rules. LegalDoji, at its sole discretion, may choose not to publish your reviews and feedback, if so required by applicable law, and in accordance with Clause 5 of these Terms. You agree that LegalDoji may contact you through telephone, email, SMS, or any other electronic means of communication for the purpose of:<br/><br/>
+Obtaining feedback in relation to the Website or LegalDoji’s services; and/or obtaining feedback in relation to any advocates listed on the Website; and/or resolving any complaints, information, or queries by advocates regarding your Critical Content; and you agree to provide your fullest cooperation further to such communication by LegalDoji. LegalDoji’s Feedback Collection and Fraud Detection Policy is annexed as the Schedule hereto and remains subject always to these terms.<br/><br/>
+The terms in this Clause 4 are applicable only to advocates.<br/><br/>
+<h3>4.1 LISTING POLICY</h3>
+<ul>
+    <li>LegalDoji, directly and indirectly, collects information regarding the advocates’ profiles, contact details, and practice. LegalDoji reserves the right to take down any advocate's profile as well as the right to display the profile of the advocates, with or without notice to the concerned advocates. This information is collected to facilitate interaction with the End-Users and other Users. If any information displayed on the Website in connection with you and your profile is found to be incorrect, you are required to inform LegalDoji immediately to enable LegalDoji to make the necessary amendments.</li><br/>
+    <li>LegalDoji shall not be liable and responsible for the ranking of the advocates on external websites and search engines</li><br/>
+    <li>LegalDoji shall not be responsible or liable in any manner to the Users for any losses, damage, injuries, or expenses incurred by the Users as a result of any disclosures or publications made by LegalDoji, where the User has expressly or implicitly consented to the making of disclosures or publications by LegalDoji. If the User had revoked such consent under the terms of the Privacy Policy, then LegalDoji shall not be responsible or liable in any manner to the User for any losses, damage, injuries, or expenses incurred by the User as a result of any disclosures made by LegalDoji before its actual receipt of such revocation.</li><br/>
+    <li>LegalDoji reserves the right to moderate the suggestions made by the advocates through feedback and the right to remove any abusive or inappropriate or promotional content added to the Website. However, LegalDoji shall not be liable if any inactive, inaccurate, fraudulent, or non-existent profiles of advocates are added to the Website.</li><br/>
+    <li>Advocates explicitly agree that LegalDoji reserves the right to publish the Content provided by advocates to the third party including content platforms.</li><br/>
+    <li>You as an advocate hereby represent and warrant that you will use the Services in accordance with applicable law. Any contravention of applicable law as a result of your use of these Services is your sole responsibility, and LegalDoji accepts no liability for the same.</li><br/>
+</ul>
+<h3>4.2 PROFILE OWNERSHIP AND EDITING RIGHTS</h3><br/><br/>LegalDoji ensures easy access to the advocates by providing a tool to update your profile information. LegalDoji reserves the right of ownership of all the advocate's profile and photographs and to moderate the changes or updates requested by advocates. However, LegalDoji takes the independent decision of whether to publish or reject the requests submitted for the respective changes or updates. You hereby represent and warrant that you are fully entitled under law to upload all content uploaded by you as part of your profile or otherwise while using LegalDoji’s services and that no such content breaches any third-party rights, including intellectual property rights. Upon becoming aware of a breach of the foregoing representation, LegalDoji may modify or delete parts of your profile information at its sole discretion with or without notice to you.<br/><br/>
+<h3>4.3 REVIEWS AND FEEDBACK DISPLAY RIGHTS OF LegalDoji</h3><br/><br/>
+<ul>
+    <li>All Critical Content is content created by the Users of www.LegalDoji.com (“Website”) and the clients of LegalDoji customers and advocates, including the End-Users. As a platform, LegalDoji does not take responsibility for Critical Content and its role with respect to Critical Content is restricted to that of an ‘intermediary’ under the Information Technology Act, of 2000. The role of LegalDoji and other legal rights and obligations relating to the Critical Content are further detailed in Clauses 3.9 and 5 of these Terms. LegalDoji’s Feedback Collection and Fraud Detection Policy is annexed as the Schedule hereto and remains subject always to these Terms.</li><br/><br/>
+    <li>LegalDoji reserves the right to collect feedback and Critical Content for all the advocates listed on the Website.</li><br/><br/>
+    <li>LegalDoji shall have no obligation to pre-screen, review, flag, filter, modify, refuse or remove any or all Critical Content from any Service, except as required by applicable law.</li><br/><br/>
+    <li>You understand that by using the Services you may be exposed to Critical Content or other content that you may find offensive or objectionable. LegalDoji shall not be liable for any effect on the advocate's business due to Critical Content of a negative nature. In these respects, you may use the Service at your own risk. LegalDoji however, as an ‘intermediary, takes steps as required to comply with applicable law as regards the publication of Critical Content. The legal rights and obligations with respect to Critical Content and any other information sought to be published by Users are further detailed in Clauses 3.9 and 5 of these Terms.</li><br/><br/>
+    <li>LegalDoji will take down information under standards consistent with applicable law, and shall in no circumstances be liable or responsible for Critical Content, which has been created by the Users. The principles set out in relation to third-party content in the terms of Service for the Website shall be applicable mutatis mutandis in relation to Critical Content posted on the Website.</li><br/><br/>
+    <li>If LegalDoji determines that you have provided inaccurate information or enabled fraudulent feedback, LegalDoji reserves the right to immediately suspend any of your accounts with LegalDoji and makes such declaration on the website alongside your name/your advocate name as determined by LegalDoji for the protection of its business and in the interests of Users.</li><br/><br/>
+</ul>
+<h3>4.5 INDEPENDENT SERVICES</h3><br/><br/>Your use of each Service confers upon you only the rights and obligations relating to such Service, and not to any other service that may be provided by LegalDoji.<br/><br/>
+<h3>4.6 LegalDoji REACH RIGHTS</h3><br/><br/>LegalDoji reserves the right to display sponsored ads on the Website. These ads would be marked as “Sponsored ads”. Without prejudice to the status of other content, LegalDoji will not be liable for the accuracy of the information or the claims made in the Sponsored ads. LegalDoji does not encourage the Users to visit the Sponsored ads page or to avail of any services from them. LegalDoji will not be liable for the services of the providers of the Sponsored ads.<br/><br/>
+You represent and warrant that you will use these Services in accordance with applicable law. Any contravention of applicable law as a result of your use of these Services is your sole responsibility, and LegalDoji accepts no liability for the same.<br/><br/>
+<h3>4.8 BOOK APPOINTMENT</h3><br/><br/>
+<ul>
+    <li>As a valuable partner on our platform we want to ensure that the advocate's experience on the LegalDoji booking platform is beneficial to both advocates and their Users.</li><br/>
+    <li>Advocate understands that LegalDoji shall not be liable, under any event, for any comments or feedback given by any of the Users in relation to the Services provided by advocates. The option of publishing or modifying or moderating or masking (where required by law or norm etc.) the feedback provided by Users shall be solely at the discretion of LegalDoji.</li><br/>
+</ul>
+<h3>4.9 ADVOCATES UNDERTAKING</h3><br/><br/>The advocate is and shall be duly registered, licensed, and qualified to practise & provide legal consultancy, as per applicable laws/regulations/guidelines set out by competent authorities and the advocate shall not be part of any arrangement that will prohibit him/her from practising law within the territory of India. The advocates shall at all times ensure that all the applicable laws that govern the advocates shall be followed and utmost care shall be taken in terms of the consultation/ services being rendered.<br/><br/>
+<h3>4.10 USAGE IN PROMOTIONAL & MARKETING MATERIALS</h3><br/><br/>In recognition of the various offerings and services provided by LegalDoji to advocates, advocates shall (subject to its reasonable right to review and approve): (a) allow LegalDoji to include a brief description of the services provided to advocates in LegalDoji’s marketing, promotional and advertising materials; (b) allow LegalDoji to refer to advocates in case studies, and related marketing materials; (c) serve as a reference to LegalDoji’s existing and potential clients; (d) provide video logs, testimonials, e-mailers, banners, interviews to the news media and provide quotes for press releases; (e) make presentations at conferences; and/or (f) use the advocate's name and/or logo, brand images, tag lines, etc., within product literature, e-mailers, press releases, social media and other advertising, marketing, and promotional materials.<br/><br/>
+<ul>
+    <li>RIGHTS AND OBLIGATIONS RELATING TO CONTENT</li><br/><br/>
+</ul>5.1As mandated by Regulation 3(2) of the IG Rules, LegalDoji hereby informs Users that they are not permitted to host, display, upload, modify, publish, transmit, update or share any information that belongs to another person and to which the User does not have any right; is grossly harmful, harassing, blasphemous, defamatory, obscene, pornographic, paedophilic, libellous, invasive of another's privacy, hateful, or racially, ethnically objectionable, disparaging, relating or encouraging money laundering or gambling, or otherwise unlawful in any manner whatever; harm minors in any way; infringes any patent, trademark, copyright, or other proprietary rights; violates any law for the time being in force; deceives or misleads the addressee about the origin of such messages or communicates any information which is grossly offensive or menacing; impersonate another person; contains software viruses or any other computer code, files, or programs designed to interrupt, destroy or limit the functionality of any computer resource; threatens the unity, integrity, defence, security, or sovereignty of India, friendly relations with foreign states, or public order or causes incitement to the commission of any cognizable offence or prevents investigation of any offence or is insulting any other nation.<br/><br/>
+
+<h3>5.2 Users are also prohibited from:</h3><br/><br/>Violating or attempting to violate the integrity or security of the Website or any LegalDoji Content; transmitting any information (including job posts, messages, and hyperlinks) on or through the Website that is disruptive or competitive to the provision of Services by LegalDoji; intentionally submitting on the Website any incomplete, false, or inaccurate information; making any unsolicited communications to other Users; using any engine, software, tool, agent, or other device or mechanism (such as spiders, robots, avatars, or intelligent agents) to navigate or search the Website; attempting to decipher, decompile, disassemble or reverse engineer any part of the Website; copying or duplicating in any manner any of the LegalDoji Content or other information available from the Website; framing or hot linking or deep linking any LegalDoji Content. Circumventing or disabling any digital rights management, usage rules, or other security features of the Software.<br/><br/>5.3 LegalDoji, upon obtaining knowledge by itself or being brought to actual knowledge by an affected person in writing or through email signed with electronic signature about any such information as mentioned above, shall be entitled to disable such information that is in contravention of Clauses 5.1 and 5.2. LegalDoji shall also be entitled to preserve such information and associated records for at least 90 (ninety) days for production to governmental authorities for investigation purposes.<br/><br/>
+5.4 In case of non-compliance with any applicable laws, rules, or regulations, or the Agreement (including the Privacy Policy) by a User, LegalDoji has the right to immediately terminate the access or usage rights of the User to the Website and Services and to remove non-compliant information from the Website.<br/><br/>
+5.5 LegalDoji may disclose or transfer User-generated information to its affiliates or governmental authorities in such manner as permitted or required by applicable law, and you hereby consent to such transfer. The SPI Rules only permit LegalDoji to transfer sensitive personal data or information including any information, to any other body corporate or a person in India, or located in any other country, that ensures the same level of data protection that is adhered to by LegalDoji as provided for under the SPI Rules, only if such transfer is necessary for the performance of the lawful contract between LegalDoji or any person on its behalf and the User or where the User has consented to data transfer.<br/><br/>
+LegalDoji respects the intellectual property rights of others and we do not hold any responsibility for any violations of any intellectual property rights<br/><br/>
+<ul>
+    <li>TERMINATION</li><br/>
+</ul>6.1 LegalDoji reserves the right to suspend or terminate a User’s access to the Website and the Services with or without notice and to exercise any other remedy available under law, in cases where Such User breaches any terms and conditions of the Agreement; A third party reports a violation of any of its rights as a result of your use of the Services; LegalDoji is unable to verify or authenticate any information provide to LegalDoji by a User; LegalDoji has reasonable grounds for suspecting any illegal, fraudulent, or abusive activity on part of such User; or LegalDoji believes in its sole discretion that the User’s actions may cause legal liability for such User, other Users, or for LegalDoji or are contrary to the interests of the Website.<br/><br/>
+6.2 Once temporarily suspended, indefinitely suspended, or terminated, the User may not continue to use the Website under the same account, a different account, or re-register under a new account. On termination of an account due to the reasons mentioned herein, such User shall no longer have access to data, messages, files, and other material kept on the Website by such User. The User shall ensure that he/she/it has continuous backup of any legal services the User has rendered to comply with the User’s record-keeping process and practices.<br/><br/>
+<ul>
+    <li>LIMITATION OF LIABILITY</li><br/></ul>In no event, including but not limited to negligence, shall LegalDoji, or any of its directors, officers, employees, agents, or content or service providers (collectively, the “Protected Entities”) be liable for any direct, indirect, special, incidental, consequential, exemplary or punitive damages arising from, or directly or indirectly related to, the use of, or the inability to use, the Website or the content, materials, and functions related thereto, the Services, User’s provision of information via the Website, lost business or lost End-Users, even if such Protected Entity has been advised of the possibility of such damages. In no event shall the Protected Entities be liable for:<br/><br/>
+provision of or failure to provide all or any service by advocates to End- Users contacted or managed through the Website; any content posted, transmitted, exchanged, or received by or on behalf of any User or other person on or through the Website; any unauthorised access to or alteration of your transmissions or data; or any other matter relating to the Website or the Service.<br/><br/>
+In no event shall the total aggregate liability of the Protected Entities to a User for all damages, losses, and causes of action (whether in contract or tort, including, but not limited to, negligence or otherwise) arising from this Agreement or a User’s use of the Website or the Services exceed, in the aggregate Rs. 1000/- (Rupees One Thousand Only).<br/><br/>
+<ul>
+    <li>RETENTION AND REMOVAL</li><br/>
+</ul>LegalDoji may retain such information collected from Users from its Website or Services for as long as necessary, depending on the type of information; purpose, means, and modes of usage of such information; and according to the SPI Rules. Computer web server logs may be preserved as long as administratively necessary.<br/><br/>
+<ul>
+    <li>APPLICABLE LAW AND DISPUTE SETTLEMENT</li><br/>
+</ul>
+9.1 You agree that this Agreement and any contractual obligation between LegalDoji and User will be governed by the laws of India.<br/><br/>
+9.2 Any dispute, claim or controversy arising out of or relating to this Agreement, including the determination of the scope or applicability of this Agreement to arbitrate, or your use of the Website or the Services or information to which it gives access, shall be determined by arbitration in India, before a sole arbitrator appointed by LegalDoji. The arbitration shall be conducted in accordance with the Arbitration and Conciliation Act, of 1996. The seat of such arbitration shall be Delhi. All proceedings of such arbitration, including, without limitation, any awards, shall be in the English language. The award shall be final and binding on the parties to the dispute.<br/><br/>
+9.3 Subject to the above Clause 9.2, the courts at Delhi shall have exclusive jurisdiction over any disputes arising out of or in relation to this Agreement, your use of the Website or the Services, or the information to which it gives access.<br/><br/>
+ 
+If a User has any questions concerning LegalDoji, the Website, this Agreement, the Services, or anything related to any of the foregoing, LegalDoji customer support can be reached at the following email address: support@LegalDoji.com or via the contact information available from the following hyperlink: www.LegalDoji.com/contact.
+In accordance with the Information Technology Act, 2000, and the rules made there under, if you have any grievance concerning the Website or the service, including any discrepancies and grievances concerning the processing of information, you can contact our Grievance Officer at:<br/><br/>
+
+Litsurance Legal Solutions LLP<br/><br/>
+1/22, Second Floor,<br/><br/>
+Asaf Ali Road, New Delhi<br/><br/>
+Delhi- 110002<br/><br/>
+In the event you suffer as a result of access or usage of our Website by any person in violation of Rule 3 of the IG Rules, please address your grievance to the above person.<br/><br/>
+SEVERABILITY<br/><br/>
+If any provision of the Agreement is held by a court of competent jurisdiction or arbitral tribunal to be unenforceable under applicable law, then such provision shall be excluded from this Agreement and the remainder of the Agreement shall be interpreted as if such provision were so excluded and shall be enforceable in accordance with its terms; provided however that, in such event, the Agreement shall be interpreted to give effect, to the greatest extent consistent with and permitted by applicable law, to the meaning and intention of the excluded provision as determined by such court of competent jurisdiction or arbitral tribunal.<br/><br/>
+            </div>
+        </div>
+    </main>
+    <!-- Main End -->
+
+<!-- Footer Start -->
+<footer class="col-12 just-cnt-cent align-itm-cent flx-d-col">
+    <div class="cont col-12 just-cnt-cent align-itm-cent flx-wrp">
+        <div class="sub-cont col-12 col-md-3 flx-d-col just-cnt-cent align-itm-cent">
+            <img src="/images/main-logo.png" alt="" class="col-12">
+        </div>
+        <div class="sub-cont col-12 col-md-4 flx-d-col just-cnt-cent align-itm-cent">
+            <h3>Site Links</h3>
+            <a href="/">Home</a>
+            <a href="/about-us">About Us</a>
+            <a href="/faq">FAQ</a>
+            <a href="/signupa">Join Us</a>
+        </div>
+        <div class="sub-cont col-12 col-md-4 just-cnt-cent align-itm-cent">
+            <a href="https://www.instagram.com/legaldoji"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@legaldoji"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.twitter.com/legaldoji"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/86867901/admin/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="copyr col-6 just-cnt-spev align-itm-cent txt-al-cent flx-wrp">
+        <a href="/policy/terms" style="color:#fff">Terms and Conditions</a>
+        <a href="/policy/privacy" style="color:#fff">Privacy Policy</a>
+        <a href="/policy/refund" style="color:#fff">Refunds Policy</a>
+    </div>
+    <div class="copyr col-12 just-cnt-cent align-itm-cent">
+      <p class="col-12 txt-al-cent" style="color: #fff;">Copyright &copy; 2022, Litsurance Legal Solutions LLP, All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/c758c8bec9.js" crossorigin="anonymous"></script>
+    <script src="/scripts/vanilla-tilt.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js'></script><script  src="./script.js"></script>
+    <script>
+        var cards = $('#card-slider .slider-item').toArray();
+
+startAnim(cards);
+
+function startAnim(array){
+    if(array.length >= 4 ) {
+        TweenMax.fromTo(array[0], 0.5, {x:0, y: 0, opacity:0.75}, {x:0, y: -120, opacity:0, zIndex: 0, delay:0.03, ease: Cubic.easeInOut, onComplete: sortArray(array)});
+
+        TweenMax.fromTo(array[1], 0.5, {x:79, y: 125, opacity:1, zIndex: 1}, {x:0, y: 0, opacity:0.75, zIndex: 0, boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)', ease: Cubic.easeInOut});
+
+        TweenMax.to(array[2], 0.5, {bezier:[{x:0, y:250}, {x:65, y:200}, {x:79, y:125}], boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)', zIndex: 1, opacity: 1, ease: Cubic.easeInOut});
+
+        TweenMax.fromTo(array[3], 0.5, {x:0, y:400, opacity: 0, zIndex: 0}, {x:0, y:250, opacity: 0.75, zIndex: 0, ease: Cubic.easeInOut}, );
+    } else {
+        $('#card-slider').append('<p>Sorry, carousel should contain more than 3 slides</p>')
+    }
+}
+
+function sortArray(array) {
+    clearTimeout(delay);
+    var delay = setTimeout(function(){
+        var firstElem = array.shift();
+        array.push(firstElem);
+        return startAnim(array); 
+    },3000)
+}
+
+    </script>
+    
+<script>
+    // Code By Webdevtrick ( https://webdevtrick.com )
+const items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+
+</body>
+</html>

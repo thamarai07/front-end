@@ -1,0 +1,227 @@
+body header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 10px;
+  transform-style: preserve-3d;
+  z-index: 10000;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(164, 214, 255, 0.34);
+}
+body header .cont {
+  max-width: 1300px;
+  height: 40px;
+}
+body header .cont .h-logo {
+  height: 40px;
+}
+body header .cont .h-logo img {
+  height: 100%;
+}
+body header .cont nav {
+  max-width: 500px;
+  height: 50px;
+}
+body header .cont nav ul {
+  height: 100%;
+}
+body header .cont nav ul li {
+  height: 100%;
+}
+body header .cont nav ul li a {
+  height: 100%;
+  color: rgb(0, 0, 0);
+  padding: 0 20px;
+  transition: all 0.4s ease-in;
+  font-size: 12px;
+}
+body header .cont nav ul li a:hover {
+  background-color: rgba(1, 170, 237, 0.312);
+}
+body header .cont .h-btns {
+  padding: 10px;
+  justify-content: flex-end;
+}
+body header .cont .h-btns a {
+  padding: 10px 25px;
+  margin: 0 2px;
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease;
+}
+body header .cont .h-btns a:nth-child(1) {
+  background: linear-gradient(92.27deg, rgba(0, 166, 255, 0.9960784314) 24.1%, #006bcf 105.81%);
+  box-shadow: -13px 8px 126px rgba(255, 255, 255, 0.15);
+  border-radius: 55px;
+}
+body header .cont .h-btns a:nth-child(1):hover {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(0, 166, 255, 0.9960784314);
+  background: transparent;
+}
+body header .cont .h-btns a:nth-child(2) {
+  color: rgb(0, 0, 0);
+  margin-right: 30px;
+  border: 1px solid rgba(0, 166, 255, 0.9960784314);
+  box-shadow: -13px 8px 126px rgba(255, 255, 255, 0.15);
+  border-radius: 55px;
+}
+body header .cont .h-btns a:nth-child(2):hover {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 166, 255, 0.9960784314);
+  background: linear-gradient(92.27deg, rgba(0, 166, 255, 0.9960784314) 24.1%, #006bcf 105.81%);
+  border: none;
+}
+body main {
+  margin: 70px 0 0 0;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+body main .cont {
+  padding: 10px 0;
+}
+body main .cont .hero {
+  max-width: 1300px;
+}
+body main .cont .hero .hero-txt {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 10px 0;
+  padding: 20px;
+}
+body main .cont .hero .hero-txt h1 {
+  font-size: 4em;
+  margin: 10px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+body main .cont .hero .hero-txt h4 {
+  text-align: center;
+  font-weight: 0 !important;
+  color: rgb(24, 24, 24);
+  margin: 15px 0;
+}
+body main .cont .hero .hero-txt hr {
+  color: rgba(41, 41, 41, 0.266);
+  margin: 10px 0;
+}
+body main .cont .hero .hero-txt a {
+  height: 100%;
+  color: rgb(255, 255, 255);
+  margin: 15px 0;
+  padding: 15px 30px;
+  transition: all 0.4s ease-in;
+  background: linear-gradient(92.27deg, rgba(0, 166, 255, 0.9960784314) 24.1%, #004e97 105.81%);
+  box-shadow: -13px 8px 126px rgba(255, 255, 255, 0.15);
+  border-radius: 55px;
+}
+body main .cont .hero .hero-txt a:hover {
+  border: 1px solid rgba(0, 166, 255, 0.9960784314);
+  background: transparent;
+  color: rgb(0, 0, 0);
+}
+body main .cont .hero .hero-img {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 10px 0;
+  height: 100%;
+  border-radius: 33px;
+  background: #ffffff;
+  box-shadow: 27px 27px 65px #c1cad1, -27px -27px 65px #ffffff;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 51px;
+}
+body main .cont .intro {
+  margin: 10px 0 50px 0;
+}
+body main .cont .intro img {
+  min-height: 250px;
+  width: 100%;
+  transform: scaleX(-1);
+}
+body main .cont .intro .cont {
+  background: linear-gradient(181.56deg, #01a2f9 1.32%, rgba(0, 0, 0, 0) 76.21%);
+  padding: 50px 20px;
+}
+body main .cont .intro .cont h2 {
+  font-size: 3em;
+}
+body main .cont .intro .cont > p {
+  max-width: 350px;
+  margin: 15px 0;
+}
+body main .cont .intro .cont .cards {
+  margin: 25px 0;
+}
+body main .cont .intro .cont .cards .card {
+  max-width: 250px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.316);
+  background-color: rgba(0, 166, 255, 0.168627451);
+  text-align: center;
+  padding: 15px;
+}
+body main .cont .intro .cont .cards .card i {
+  color: rgb(0, 72, 255);
+  font-size: 3em;
+}
+body main .cont .intro .cont .cards .card h3 {
+  font-size: 1.2em;
+  margin: 10px;
+}
+body main .cont .intro .cont .cards .card p {
+  font-size: 12px;
+}
+body main .cont .graphics {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.168);
+  padding: 50px 0;
+}
+body main .cont .graphics .stage {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .cont .graphics .stage h1 {
+  color: #000 !important;
+}
+body footer {
+  background-color: #000;
+  margin: 50px 0 0 0;
+  padding: 50px 0 0 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body footer .cont {
+  max-width: 1300px;
+  padding: 25px 20px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+body footer .cont .sub-cont {
+  max-width: 250px;
+}
+body footer .cont .sub-cont h3 {
+  margin: 10px 0;
+}
+body footer .cont .sub-cont a, body footer .cont .sub-cont i {
+  margin: 3px;
+  color: rgb(223, 223, 223);
+}
+body footer .cont .sub-cont a:hover, body footer .cont .sub-cont i:hover {
+  color: rgba(0, 166, 255, 0.9960784314);
+}
+body footer .cont .sub-cont i {
+  font-size: 1.5em;
+}
+body footer .copyr {
+  max-width: 1300px;
+  padding: 25px 20px;
+}
+body footer .copyr p {
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

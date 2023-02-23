@@ -1,0 +1,15 @@
+/* Mobile M and S */
+@media only screen and (max-width: 375px) {
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+}
+
+/* Laptops */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Desktops */
+@media only screen and (max-width: 900px) {
+}
